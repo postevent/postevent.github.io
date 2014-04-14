@@ -56,7 +56,7 @@ table {
 /*************************/ 
 
 .leftSide {
-  width: 54%;
+  width: 51%;
   float: left;
   display: inline-block;
 }
@@ -65,7 +65,7 @@ table {
   position: fixed;
   right: 0;
   height: 100%;
-  width: 46%;
+  width: 49%;
   overflow: scroll;
 }
 
@@ -73,8 +73,9 @@ table {
   font-size: 1.2em;
   text-align: left;
   padding: 3em;
-  padding-top: 0px;
-  padding-left: 0px;
+  padding-bottom: 2em;
+  padding-top: 0;
+  padding-left: 0;
   margin-top: 2em;
   border-left: 1px solid #f8f8f8;
 }
@@ -89,36 +90,6 @@ table {
   font-size: 4em;
   font-weight: 700;
   text-rendering: optimizeLegibility;
-}
-
-.headerArea a {
-  color: #2793e6;
-}
-
-.headerArea a:hover {
-  text-decoration: none;
-}
-
-.createLogo {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  display: inline;
-  font-weight: normal;
-  font-size: 24px;
-  margin-left: 20px;
-  display: inline;
-  font-size: 24px;
-  margin-left: 20px;
-}
-
-#joinUsTopLink {
-  padding-right: 0px;
-  margin-right: 20px;
-  border-bottom: 3px solid #fff;
-}
-
-#profileLink {
-    float: right;
-    padding-top: 7px;
 }
 
 /*****************************************************************************/
@@ -151,8 +122,8 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 47em;
-  margin: 3em 0px 2em auto;
+  width: 44em;
+  margin: 3em 0 2em auto;
   line-height: 1.5em;
 }
 
@@ -189,10 +160,11 @@ ul.posts {
   .site .footer {
     font-size: 80%;
     color: #666;
-    border-top: 4px solid #eee;
     margin-top: 2em;
     overflow: hidden;
-    width: 60%
+    margin-right: 3em;
+    background-color: #f8f8f8;
+    border-radius: 5px;
   }
 
     .site .footer .contact {
@@ -223,7 +195,7 @@ ul.posts {
 #post {
   max-width: 580px;
   /* margin:auto; */
-  padding: 20px;
+  padding: 2em;
   background-color: #f8f8f8;
 }
 
@@ -280,9 +252,7 @@ ul.posts {
   }
 
   #related {
-    margin: 20px;
-    margin-top: 2em;
-    margin-bottom: 6em;
+    margin: 2em;
   }
 
   #related h2 {
