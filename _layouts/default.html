@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="corqboard - blog" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Header Font -->
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+  <!-- jquery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.posts > li').click(function(e){
+        e.preventDefault();
+        var link = $(this).find('a').attr('href');
+        $('#rightSideInner').text('Loading...');
+        $('.posts > li').not(this).removeClass('selectedPost');
+        $(this).addClass('selectedPost');
+
+        $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
+            var data = $('<div />').html(data).find('#post, #related');
+            $('#rightSideInner').html(data);
+          }});
+      });
+    });
+  </script>
+<body>
+<div class="leftSide">
+  <div class="leftSideInner">
+    <!--<div class="headerArea" id="staticPagesHeader">
+        <div class="schoolHeader">corqboard / blog</div>
+        <div class="createLogo">
+          <a id ="joinUsTopLink">Join Us!</a>
+          <a id="profileLink">Sign in</a>
+        </div>
+    </div>-->
+    <div class="site">
+      <div class="title blogHeader">
+        corqboard
+        <!--<a href="/">corqboard - blog</a>
+        <a class="extra" href="/">home</a>-->
+      </div>
+      
+      {{ content }}
+      
+      <div class="footer">
+        <div class="contact">
+          <img alt="Corqboard-lighter-resize-200px" class="corqboardMissingPinCard" src="/images/corqboardPin200.png" style="max-height: 64px;border: none;background: transparent;margin: auto;margin:1em;display:block;">
+        </div>
+        <div class="contact">
+          <p>
+            corqboard<br />
+            the internet's safest classifieds<br />
+            contact@corqboard.org
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="#">Press</a><br />
+            <a href="#">otherlinks</a><br />
+            <a href="#">link3</a>
+          </p>
+        </div>
+      </div>
+    </div> <!-- site -->
+  </div>
+</div><!-- leftSide -->
+
+<div class="rightSide">
+  <div id="rightSideInner">
+  </div>
+</div>
+
+</body>
+</html>
