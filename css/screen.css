@@ -35,7 +35,7 @@ p {
 }
 
 a {
-  color: #00a;
+  color: #2793e6;
 }
 
 a:hover {
@@ -43,7 +43,8 @@ a:hover {
 }
 
 a:visited {
-  color: #a0a;
+  /*color: #bbb;*/
+  color: #7A27E5;
 }
 
 table {
@@ -130,7 +131,8 @@ ul.posts {
 .title {
   color: #2793e6;
   font-weight: bold;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1em;
 }
 
   .site .title a {
@@ -141,6 +143,7 @@ ul.posts {
   .site .title a:hover {
     text-decoration: none;
     color: #2794e6;
+    cursor: pointer;
   }
 
   .site .title a.extra {
@@ -173,7 +176,7 @@ ul.posts {
     }
 
       .site .footer .contact a {
-        color: #8085C1;
+        color: #2793e6;
       }
 
     .site .footer .rss {
@@ -249,6 +252,14 @@ ul.posts {
 
   #post pre.terminal code {
     background-color: #333;
+  }
+
+  #post a{
+    text-decoration: none;
+  }
+  #post a:hover{
+    color: #2793e6;
+    text-decoration: underline;
   }
 
   #related {

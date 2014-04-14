@@ -21,13 +21,28 @@
 
   <script>
     $(document).ready(function () {
-
-      $('.posts > li').click(function(e){
+      var postLinks = $('.thisPost');
+      //todo: dry this up later
+      $(postLinks).click(function(e){
         e.preventDefault();
         var link = $(this).find('a').attr('href');
-        $('#rightSideInner').text('Loading...');
-        $('.posts > li').not(this).removeClass('selectedPost');
+        var currentState = history.state;
+        window.history.pushState(currentState, '', link);
+
+        $(postLinks).not(this).removeClass('selectedPost');
         $(this).addClass('selectedPost');
+
+        $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
+            var data = $('<div />').html(data).find('#post, #related');
+            $('#rightSideInner').html(data);
+          }});
+      });
+
+      window.addEventListener('popstate', function(e) {
+        var link = location.pathname;
+        var reselect = $('.thisPost').has('a[href="'+link+'"]');
+        $('.thisPost').not(reselect).removeClass('selectedPost');
+        $(reselect).addClass('selectedPost');
 
         $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
             var data = $('<div />').html(data).find('#post, #related');
@@ -39,19 +54,8 @@
 <body>
 <div class="leftSide">
   <div class="leftSideInner">
-    <!--<div class="headerArea" id="staticPagesHeader">
-        <div class="schoolHeader">corqboard / blog</div>
-        <div class="createLogo">
-          <a id ="joinUsTopLink">Join Us!</a>
-          <a id="profileLink">Sign in</a>
-        </div>
-    </div>-->
     <div class="site">
-      <div class="title blogHeader">
-        corqboard
-        <!--<a href="/">corqboard - blog</a>
-        <a class="extra" href="/">home</a>-->
-      </div>
+      <div class="title blogHeader">corqboard / blog</div>
       
       {{ content }}
       
@@ -62,7 +66,7 @@
         <div class="contact">
           <p>
             corqboard<br />
-            the internet's safest classifieds<br />
+            ---tagline here---<br />
             corqboard © 2014
           </p>
         </div>
