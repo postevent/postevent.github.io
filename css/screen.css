@@ -93,6 +93,17 @@ table {
   text-rendering: optimizeLegibility;
 }
 
+.corqboardTinyPin {
+  max-height: 64px;
+  border: none;
+  background: transparent;
+  margin: auto;
+  margin:1em;
+  margin-right:0;
+  margin-left:2em;
+  display:block;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -124,7 +135,7 @@ ul.posts {
   font-size: 110%;
   text-align: justify;
   width: 44em;
-  margin: 3em 0 2em auto;
+  margin: 2em 0 2em auto;
   line-height: 1.5em;
 }
 
