@@ -176,9 +176,7 @@ ul.posts {
     color: #666;
     margin-top: 2em;
     overflow: hidden;
-    margin-right: 3em;
-    background-color: #f8f8f8;
-    border-radius: 5px;
+    border-top: 5px solid #f8f8f8;
   }
 
     .site .footer .contact {
@@ -215,6 +213,9 @@ ul.posts {
 
   /* standard */
 
+  #post p {
+    line-height: 21px;
+  }
   #post pre {
     border: 1px solid #ddd;
     background-color: #eef;
