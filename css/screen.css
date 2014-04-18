@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: #f0f0f0;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -117,6 +117,7 @@ ul.posts {
 
   ul.posts li {
     line-height: 1.75em;
+    padding: .5em;
   }
 
   ul.posts span {
@@ -176,7 +177,10 @@ ul.posts {
     color: #666;
     margin-top: 2em;
     overflow: hidden;
-    border-top: 5px solid #f8f8f8;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-right: 3em;
   }
 
     .site .footer .contact {
@@ -208,7 +212,9 @@ ul.posts {
   max-width: 580px;
   /* margin:auto; */
   padding: 2em;
-  background-color: #f8f8f8;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid #ddd;
 }
 
   /* standard */
@@ -243,7 +249,9 @@ ul.posts {
   }
 
   .selectedPost {
-    background-color: #f8f8f8;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   .posts li {
