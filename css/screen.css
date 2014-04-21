@@ -108,11 +108,19 @@ table {
 /* Home
 /*
 /*****************************************************************************/
+  
+  #home {
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 1em;
+    padding-right: 0px;
+  }
 
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
+  ul.posts {
+    list-style-type: none;
+    /*margin-bottom: 2em;*/
+  }
 
   ul.posts li {
     line-height: 1.75em;
@@ -179,7 +187,7 @@ ul.posts {
     background-color: #fff;
     border-radius: 5px;
     border-bottom: 1px solid #ddd;
-    margin-right: 3em;
+    margin-right: 2em;
   }
 
     .site .footer .contact {
@@ -249,9 +257,9 @@ ul.posts {
   }
 
   .selectedPost {
-    background-color: #fff;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    background-color: #ffd;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
   }
 
   .posts li {
