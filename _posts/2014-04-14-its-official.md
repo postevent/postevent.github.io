@@ -3,10 +3,10 @@ layout: post
 title: It's Official - The Corqboard Blog
 ---
 
-{{ page.title }}
+<span id="blogPostsTitle" style="color:#2793e6;margin:0;">{{ page.title }}</span>
 ================
 
-<p class="meta">April 14, 2014 - Palo Alto - 11:41pm</p>
+<p class="meta thinnerLighter">April 14, 2014 - Palo Alto - 11:41pm</p>
 
 After a few hours of hacking around with Jekyll, I've created the first strokes of what is the official corqbord blog. I want to thank Tom Preston-Warner and Zac Holman of Github fame for the inspiration using Jekyll and the new Github Pages technology where this blog is 'hosted'. 
 

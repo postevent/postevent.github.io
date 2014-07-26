@@ -4,11 +4,32 @@ title: corqboard - blog
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1><span id="blogPostsTitle">Blog Posts</span></h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li class="thisPost"><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+    <div class="footer">
+        <div class="contact">
+          <img alt="corqboard.org - Safely find verything you need. Only for students." class="corqboardTinyPin" src="/images/corqboardPin200.png">
+        </div>
+        <div class="contact">
+          <p style="font-size:1.4em;margin-bottom:.5em">Safely and easily find everything you need <br>from the people around you. Only for students.</p>
+            <div>
+                <a href="//www.corqboard.org"><span class="footerLinks">Join Us</span></a>
+                <a href="//www.corqboard.org/about"><span class="footerLinks">About</span></a>
+                <a href="//www.corqboard.org/careers"><span class="footerLinks">Careers</span></a>
+                <span class="corqboardCopy">corqboard © 2014</span>
+            </div>
+        </div>
+        <!--<div class="contact">
+          <p>
+            <a href="//www.corqboard.org"><span class="footerLinks">Join Us</span></a><br />
+            <a href="//www.corqboard.org/about"><span class="footerLinks">About</span></a><br />
+            <a href="//www.corqboard.org/careers"><span class="footerLinks">Careers</span></a>
+          </p>
+        </div>-->
+      </div>
 
 </div>
