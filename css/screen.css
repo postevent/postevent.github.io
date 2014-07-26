@@ -319,6 +319,9 @@ table {
   }
   /* terminal */
 
+  #post li {
+    line-height: 1.5em;
+  }
   #post pre.terminal {
     border: 1px solid black;
     background-color: #333;
