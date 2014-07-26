@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Corqboard is opening it's doors
+title: Corqboard is now open to Stanford students
 ---
 
 <span id="blogPostsTitle" style="color:#2793e6;margin:0;">{{ page.title }}</span>
@@ -9,6 +9,9 @@ title: Corqboard is opening it's doors
 <p class="meta thinnerLighter">July 26, 2014 - Palo Alto - 2:05am</p>
 
 I am proud to say that corqboard is officially 'live' as of today!
+------------------------------------------------------------------
+
+Starting today corqboard is opening it's doors exclusively to Stanford students.
 
 The last few months have been a long, hard road of bringing corqboard to life and building it into a production-class app that can handle traffic from millions of students. That also means this blog has been sitting idley on the backburner until now. 
 

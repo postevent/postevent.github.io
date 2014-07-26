@@ -237,9 +237,13 @@ table {
   }
 
   .footerLinks {
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 1.6em;
     margin-right: 1em;
+  }
+  #joinUsBtn {
+    text-decoration: underline;
+    font-weight: 700;
   }
   .corqboardCopy {
     color: #ccc;
@@ -257,7 +261,7 @@ table {
 /*****************************************************************************/
 
 #post {
-  max-width: 580px;
+  max-width: 38em;
   /* margin:auto; */
   padding: 2em;
   background-color: #fff;
@@ -341,7 +345,7 @@ table {
   }
 
   #related {
-    max-width: 580px;
+    max-width: 38em;
     /* margin: auto; */
     padding: 2em;
     border-top: 1px solid #ddd;
