@@ -17,6 +17,7 @@ html, body {
 
 body {
   background-color: #f0f0f0;
+  background-image: url('//d365reolm4ik97.cloudfront.net/beige_paper.png');
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
@@ -87,7 +88,7 @@ table {
 .blogHeader {
   letter-spacing: -1px;
   font-family: Montserrat,sans-serif;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 700;
   text-rendering: optimizeLegibility;
 }
