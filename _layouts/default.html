@@ -44,10 +44,15 @@
         $('.thisPost').not(reselect).removeClass('selectedPost');
         $(reselect).addClass('selectedPost');
 
-        $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
-            var data = $('<div />').html(data).find('#post, #related');
-            $('#rightSideInner').html(data);
-          }});
+        if(link == '/') {
+          //hack to return to root if refresh on direct post URL
+          location.reload();
+        }else {
+          $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
+              var data = $('<div />').html(data).find('#post, #related');
+              $('#rightSideInner').html(data);
+            }});
+        }
       });
     });
   </script>
@@ -55,7 +60,7 @@
 <div class="leftSide">
   <div class="leftSideInner">
     <div class="site">
-      <div class="title blogHeader"><a href="http://www.corqboard.org">corqboard</a> / <a href="http://postevent.github.io">blog</a></div>
+      <div class="title blogHeader"><a href="http://www.corqboard.org">corqboard</a> / <a href="https://blog.corqboard.org">blog</a></div>
       
       {{ content }}
       

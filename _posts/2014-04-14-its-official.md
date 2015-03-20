@@ -8,7 +8,7 @@ title: It's Official - The Corqboard Blog
 
 <p class="meta thinnerLighter">April 14, 2014 - Palo Alto - 11:41pm</p>
 
-After a few hours of hacking around with Jekyll, I've created the first strokes of what is the official corqbord blog. I want to thank Tom Preston-Warner and Zac Holman of Github fame for the inspiration using Jekyll and the new Github Pages technology where this blog is 'hosted'. 
+After a few hours of hacking around with Jekyll, I've created the first strokes of what is the official Corqboard blog. I want to thank Tom Preston-Warner and Zac Holman of Github fame for the inspiration using Jekyll and the new Github Pages technology where this blog is 'hosted'. 
 
 What you will find here
 -----------------------
@@ -18,7 +18,7 @@ You will find the important news, updates and feature releases, but you will als
 You'll find this blog to be a bit more personal than most and that's for two reasons: 
 
 1. Being personal is one of the great benefits of a small company. 
-2. I wanted to create a blog that reflects the corqboard community.
+2. I wanted to create a blog that reflects the Corqboard community.
 
 I wanted to avoid being like the blogs that are used only like a microphone - 'Hey! Check out this new feature we built!' 
 
