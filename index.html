@@ -4,7 +4,7 @@ title: corqboard - blog
 ---
 
 <div id="home">
-  <h1><span id="blogPostsTitle">Posts</span></h1>
+  <h1 style="margin-top:1em;"><span id="blogPostsTitle">Posts</span></h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li class="thisPost"><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
