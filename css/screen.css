@@ -297,6 +297,7 @@ cursor: pointer;
   clear: both;
   /*margin-top: -5px;*/
 }
+
 /*****************************************************************************/
 /*
 /* Home
@@ -447,15 +448,18 @@ cursor: pointer;
   }
   .corqboardCopy {
     color: #ccc;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 29px;
     cursor: default;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
   }  
   .corqboardCopy:hover {
     /*color: #2793e6;*/
+  }
+  .scaleMove {
+    display: inline-block;
   }
 /*****************************************************************************/
 /*
