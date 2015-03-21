@@ -101,6 +101,12 @@ table {
 /**** Special Header *****/
 /*************************/
 
+.headerScale {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  line-height: 37px;
+}
 .blogHeader {
   letter-spacing: -1px;
   font-family: Montserrat,sans-serif;
@@ -289,7 +295,7 @@ cursor: pointer;
 .joinBtnDiv {
   float: right;
   clear: both;
-  margin-top: -5px;
+  /*margin-top: -5px;*/
 }
 /*****************************************************************************/
 /*
