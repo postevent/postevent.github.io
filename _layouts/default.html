@@ -12,7 +12,7 @@
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
    <!-- Header Font -->
-   <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -58,9 +58,12 @@
   </script>
 <body>
 <div class="leftSide">
-  <div class="leftSideInner">
+  <div id="leftSideInner">
     <div class="site">
-      <div class="title blogHeader"><a href="http://www.corqboard.org">corqboard</a> / <a href="https://blog.corqboard.org">blog</a></div>
+      <div class="title blogHeader">
+        <a href="http://www.corqboard.org">corqboard</a> / <a href="https://blog.corqboard.org">blog</a> 
+        <a href="https://www.corqboard.org/"><div class="nagBtnClass button-link btn joinBtnDiv" id="nagJoinBtn" >Join Us – It's Free</div></a>
+      </div>
       
       {{ content }}
       
