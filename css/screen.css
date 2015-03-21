@@ -172,7 +172,7 @@ table {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 44em;
+  width: 100%;
   margin: 0 0 2em auto;
   line-height: 1.5em;
 }
