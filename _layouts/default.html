@@ -46,7 +46,7 @@
 
         if(link == '/') {
           //hack to return to root if refresh on direct post URL
-          location.reload();
+          location.reload(true);
         }else {
           $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
               var data = $('<div />').html(data).find('#post, #related');
