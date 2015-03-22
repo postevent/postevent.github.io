@@ -44,15 +44,15 @@
         $('.thisPost').not(reselect).removeClass('selectedPost');
         $(reselect).addClass('selectedPost');
 
-        if(link == '/') {
+        // if(link == '/') {
           //hack to return to root if refresh on direct post URL
           // location.reload(true);
-        }else {
+        // }else {
           $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
               var data = $('<div />').html(data).find('#post, #related');
               $('#rightSideInner').html(data);
             }});
-        }
+        // }
       });
     });
   </script>
