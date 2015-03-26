@@ -414,10 +414,12 @@ cursor: pointer;
     /*border-bottom-right-radius: 5px;*/
     /*border-bottom: 1px solid #ddd;*/
     /*margin-right: 2em;*/
+    margin-top:.5em;
   }
 
   .site .footer .contact {
-    float: left;
+    /*float: left;*/
+    display: inline-block;
     margin-right: 2em;
   }
 
