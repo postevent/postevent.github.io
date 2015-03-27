@@ -20,7 +20,7 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
   <script>
-    $(document).ready(function () {
+  function magicStuff() {
       var postLinks = $('.thisPost');
       //todo: dry this up later
       $(postLinks).click(function(e){
@@ -35,6 +35,11 @@
         $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
             var data = $('<div />').html(data).find('#post, #related');
             $('#rightSideInner').html(data);
+            // make links clickable
+            magicStuff();
+            // re-highlight article title
+            // $(postLinks).not(this).removeClass('selectedPost');
+            // $(this).addClass('selectedPost');
           }});
       });
 
@@ -45,7 +50,7 @@
         $(reselect).addClass('selectedPost');
 
         // if(link == '/') {
-          //hack to return to root if refresh on direct post URL
+          //hack to return to root if refresh on direct post URL - alas, huge refresh bug in Safari :(
           // location.reload(true);
         // }else {
           $.ajax({url: link,type:'get',dataType: 'html',success: function(data) {
@@ -54,6 +59,11 @@
             }});
         // }
       });
+    }
+
+
+    $(document).ready(function() {
+      magicStuff();
     });
   </script>
 <body>
